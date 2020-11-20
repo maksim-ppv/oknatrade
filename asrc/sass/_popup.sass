@@ -1,0 +1,147 @@
+.popup
+    position: fixed
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    opacity: 0
+    visibility: hidden
+    overflow-y: auto
+    overflow-x: hidden
+    transition: all 0.8s ease 0s
+    background: rgba(0, 0, 0,0.74)
+    z-index: 9999
+    display: flex
+    align-items: center
+    justify-content: center
+.popup__body
+    background: url('../img/menu/pop-up.png') center / cover no-repeat
+    position: relative
+    width: 764px
+    height: 452px
+    transition: 1s 0.8s ease 0s
+    border-radius: 10px
+.popup__content
+    width: 100%
+    height: 100%
+    padding-left: 50px
+    padding-top: 50px
+    padding-bottom: 40px
+    padding-right: 50px
+    display: flex
+    flex-direction: column
+
+.popup-close 
+    position: absolute
+    padding: 10px
+    right: 20px
+    top: 20px
+    cursor: pointer
+.popup__top
+    font-family: Philosopher
+    color: #373737
+.popup__title
+    @include adaptiv-font(18,16)
+    line-height: 20px
+    padding-bottom: 6px
+.popup__subtitle 
+    @include adaptiv-font(28,22)
+    line-height: 31px
+    color: #373737
+    padding-bottom: 30px
+.popup__form 
+    display: flex
+    flex-direction: column
+    align-items: start
+.popup__input
+    background: #F8F8F8
+    width: 100%
+    height: 100%
+    box-shadow: inset 0px 4px 4px rgba(149, 149, 149, 0.24)
+    border-radius: 7px 
+    max-width: 400px
+    height: 54px
+    padding-left: 25px
+    font-size: 18px
+    line-height: 21px
+    color: #959595
+    margin-bottom: 20px
+    &:last-child
+        margin-bottom: 35px
+
+.popup__button
+    color: #423A2A
+    text-shadow: 0px 1px 0px #B99C5D 
+    margin-bottom: 20px
+.popup__info
+    font-weight: 300
+    @include adaptiv-font(12,10)
+    line-height: 14px
+    color: #373737 
+    max-width: 325px
+    a
+        color: #B99C5D
+        text-decoration: underline
+.open 
+	opacity: 1
+	visibility: visible
+
+
+//====================================================================================================================================
+
+.popup-thanks__body
+    background: url('../img/menu/pop-up-thanks.png') center / cover no-repeat
+
+.popup-thanks__logo
+    display: block
+    text-align: center
+    padding-bottom: 57px
+    img
+        margin: auto 
+.popup-thanks__top 
+    font-family: Philosopher
+    color: #373737 
+.popup-thanks__title
+    @include adaptiv-font(28,24)
+    line-height: 31px
+    padding-bottom: 15px
+.popup-thanks__subtitle
+    line-height: 20px
+    @include adaptiv-font(18,16)
+    padding-bottom: 70px 
+.popup-thanks__socials-text
+    @include adaptiv-font(12,10)
+    line-height: 14px
+    display: inline-block
+    padding-bottom: 10px 
+.popup-thanks__socials
+    display: flex
+    img
+        padding-right: 20px  
+
+
+//====================================================================================================================================
+
+
+.popup-thanks-steps__subtitle
+    font-family: Philosopher
+    color: #373737
+    max-width: 305px
+    max-height: 120px
+
+
+//====================================================================================================================================
+
+
+
+.popup__video-content
+    padding: 20px
+    iframe
+        border-radius: 10px
+.videos-block
+    width: 100%
+    height: 100%
+    position: relative
+.popup__video-close
+    right: -5px
+    top: -5px

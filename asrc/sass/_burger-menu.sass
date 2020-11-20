@@ -1,0 +1,164 @@
+.menu
+    &-button
+        position: relative
+        height: vw(28px)
+        width: vw(44px)
+        border: none
+        background-color: transparent
+        cursor: pointer
+        &__line
+            position: absolute
+            height: vw(3px)
+            width: vw(44px)
+            margin-top: -1px
+            margin-left: -10px
+            border-radius: 2px
+            background-color: #335393
+            transition: 0.5s ease-in-out
+            &:nth-child(1)
+                transform: translateY(vw(-12px))
+            &:nth-child(3)
+                transform: translateY(vw(12px))
+.line_active
+    span
+        background-color: #000000
+        &:nth-child(1)
+            transform-origin: center
+            transform: rotate(45deg)
+        &:nth-child(2)
+            height: 0
+        &:nth-child(3)
+            transform-origin: center
+            transform: rotate(-45deg)
+
+
+
+
+//====================================================================================================================================
+
+
+.mobile__navbar
+    
+.mobile__navbar
+    position: absolute
+    height: 100%
+    width: 100%
+    background: rgba(0, 0, 0,0.74)
+    display: flex
+    z-index: 10
+.menu-mobile__body
+    padding-top: 3%
+    padding-left: 50px
+    background: url('../img/menu/bg.png') center / cover no-repeat
+    flex: 0 1 60%
+    margin-left: auto
+    height: 100% 
+    min-width: 1150px
+    @media (max-width: 1170px)
+        padding: 3% 5%
+        min-width: 100%
+.menu-mobile__content
+    max-width: 850px
+    height: 100%
+    overflow-x: hidden
+    overflow-y: auto 
+.menu-mobile__title
+    display: flex
+    align-items: center
+    height: 54px
+    justify-content: center
+.menu-mobile__logo 
+ 
+.menu-mobile__columns
+    padding-top: 50px 
+    display: flex
+    flex-wrap: wrap
+    margin: 0px -10px
+.menu-mobile__column 
+    flex: 0 0 33%
+    padding: 0px 10px 30px
+    @media (max-width: 767.98px)
+        flex: 0 0 50%
+    @media (max-width: 576.98px)
+        display: flex
+        flex-direction: column
+        flex: 0 0 100%
+    
+.menu-mobile__column-title
+    font-family: Philosopher
+    @include adaptiv-font(20,18)
+    line-height: 22px
+    color: #373737
+    padding-bottom: 10px
+    padding-right: 10px
+    border-bottom: 0.5px solid #959595 
+    margin-bottom: 25px 
+    display: inline-block
+    text-transform: uppercase
+.menu-mobile__links
+    li
+        a
+            @include adaptiv-font(20,18)
+            line-height: 23px
+            color: #373737
+            transition: 0.2s
+            display: inline-block
+            margin-bottom: 20px
+            &:last-child
+                padding-bottom: 0
+            &:hover
+                border-bottom: 0.5px solid #B99C5D
+                transition: 0.2s
+                color: #B99C5D 
+.mobile-column__contacts
+    padding-bottom: 40px 
+    display: inline-block
+    position: relative
+    color: #373737 
+    font-weight: 500
+    &:after
+        content: ''
+        position: absolute
+        bottom: 20px
+        left: 0px
+        display: block
+        width: 179px
+        height: 1px
+        background-color:#959595
+    a
+        color: #373737 
+    
+        
+    &:last-child
+        padding-bottom: 0
+        border-bottom: 0px solid #000
+        &:after
+            height: 0px
+.mobile-location__top
+    padding-bottom: 15px 
+.mobile-location
+    position: relative
+    padding-left: 20px
+    img
+        position: absolute
+        left: 0
+        top: 5px
+.mobile-location__text-top
+    font-weight: 300
+    @include adaptiv-font(14,12)
+    line-height: 16px
+.mobile-location__text-bottom 
+    display: block
+    font-weight: 500
+    @include adaptiv-font(16,14)
+    line-height: 19px
+.mobile-column__socials
+    a
+        picture
+            img
+                display: inline-block
+                padding-right: 15px
+        &:last-child
+            picture
+                img
+                    padding-right: 0px
